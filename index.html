@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Page 1</title>
+  <link rel="stylesheet" href="./assets/css/screen.css">
+</head>
+<body>
+
+
+  <main>
+    <section id="logo-container">
+      <img id="logo" src="./assets/img/logo.png" />
+    </section>
+
+    <section id="container">
+      <form class="flex-col form" action="./page1/">
+        <h6>Information > Shipping > Payment</h6>
+        <h4>Contact Information</h4>
+        <p>
+          <input type="email" id="email" required>
+          <label for="email">Email</label>
+        </p>
+        <p>
+          <input type="text" id="first-name" required />
+          <label for="first-name">First name</label>
+        </p>
+        <p>
+          <input type="text" id="last-name" required />
+          <label for="last-name">Last name</label>
+        </p>
+        <h4>Shipping Address</h4>
+        <p>
+          <input type="text" id="country" required />
+          <label for="country">Country / Region</label>
+        </p>
+        <p>
+          <input type="text" id="address" required />
+          <label for="address">Address</label>
+        </p>
+        <p>
+          <input type="text" id="city" required />
+          <label for="city">City</label>
+        </p>
+        <p>
+          <input type="text" id="postal-code" required />
+          <label for="postal-code">Postal code</label>
+        </p>
+        <p>
+          <input type="tel" id="phone-number" />
+          <label for="phone-number">Phone number</label>
+        </p>
+        <ul class="button-container">
+          <li>
+            <a href="./page1/" >
+              <button id="continue-btn">Continue to shipping</button>
+            </a>
+          </li>
+        </ul>
+      </form>
+
+
+      <ul class="flex-col" id="overview-card">
+        <li class="subtotal-container">
+          <p class="subtotal text">Subtotal</p>
+        </li>
+        <li class="taxes-container">
+            <p class="taxes text">Taxes</p>
+        </li>
+        <li class="shipping-container">
+          <p class="shipping text">Shipping</p>
+        </li>
+        <li class="total-container">
+          <p class="total text">Total</p>
+        </li>
+      </ul>
+  </section>
+
+  </main>
+  <script type="text/javascript" src="./assets/js/index.js"></script>
+</body>
+</html>

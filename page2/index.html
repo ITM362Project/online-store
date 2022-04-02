@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Page 3</title>
+  <link rel="stylesheet" href="../assets/css/screen.css" type="text/css">
+</head>
+<body>
+
+  <main>
+    
+    <section id="logo-container">
+      <img id="logo" src="../assets/img/logo.png" />
+    </section>
+
+    <section id="container">
+      <form class="flex-col" id="final_form">
+        <h6>Information > Shipping > Payment</h6>
+        <h4>Payment</h4>
+
+        <ul class="full-width">
+          <li class="radio" class="full-width">
+            <input type="radio" id="visa" name="card_type" value="visa" required>
+            <label for="visa">Visa / master card</label>
+          </li>
+          <li class="radio" class="full-width">
+            <input type="radio" id="credit" name="card_type" value="credit">
+            <label for="credit">Credit card</label>
+          </li>
+        </ul>
+        <h4>Billing</h4>
+        <p>
+          <input type="text" id="name-on-card" required />
+          <label for="name-on-card">Name on card</label>
+        </p>
+        <p>
+          <input type="number" id="card-number" required />
+          <label for="card-number">Card number</label>
+        </p>
+        <p>
+          <input type="month" id="expiry-date" required />
+          <label for="expiry-date">Expiry date</label>
+        </p>
+        <p>
+          <input type="number" id="CVC" />
+          <label for="cvc">CVC</label>
+        </p>
+        <ul class="button-container">
+          <li>
+            <a href="../page1/">
+              <button type="button" class="back-btn" id="back_btn">Back</button>
+            </a>
+          </li>
+          <li>
+            <button id="pay_btn">Pay</button>
+          </li>
+        </ul>
+      </form>
+
+      <ul class="flex-col" id="overview-card">
+        <li class="subtotal-container">
+          <p class="subtotal text">Subtotal</p>
+        </li>
+        <li class="taxes-container">
+            <p class="taxes text">Taxes</p>
+        </li>
+        <li class="shipping-container">
+          <p class="shipping text">Shipping</p>
+        </li>
+        <li class="total-container">
+          <p class="total text">Total</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <script type="text/javascript" src="../assets/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Page 2</title>
+  <link rel="stylesheet" href="../assets/css/screen.css">
+</head>
+<body>
+
+  <main>
+    <section id="logo-container">
+      <img id="logo" src="../assets/img/logo.png" />
+    </section>
+  
+    <section id="container">
+
+      <form class="flex-col" action='../page2/'>
+        <h6>Information > Shipping > Payment</h6>
+        <h4>Shipping Method</h4>
+
+        <ul>
+          <li class="radio">
+            <input type="radio" id="shipping-method1" name="shipping-method" value="standard" required>
+            <label for="shipping-method1">
+              <p>Standard</p>
+              <p>7-DAY</p>
+            </label>
+          </li>
+          <li class="radio">
+            <input type="radio" id="shipping-method2" name="shipping-method" value="fast">
+            <label for="shipping-method2">
+              <p>Fast</p>
+              <p>3-DAY</p>
+            </label>
+          </li>
+          <li class="radio">
+            <input type="radio" id="shipping-method3" name="shipping-method" value="premium">
+            <label for="shipping-method3">
+              <p>Premium</p>
+              <p>Same-Day</p>
+            </label>
+          </li>
+        </ul>
+        <ul class="button-container">
+          <li>
+            <a href="../">
+              <button type="button" class="back-btn" id="back_btn">Back</button>
+            </a>
+          </li>
+          <li>
+            <a href="../page2/">
+              <input type="submit" id="continue-btn" value="Continue to payment" />
+            </a>
+          </li>
+        </ul>
+      </form>
+
+      
+      <ul class="flex-col" id="overview-card">
+        <li class="subtotal-container">
+          <p class="subtotal text">Subtotal</p>
+        </li>
+        <li class="taxes-container">
+            <p class="taxes text">Taxes</p>
+        </li>
+        <li class="shipping-container">
+          <p class="shipping text">Shipping</p>
+        </li>
+        <li class="total-container">
+          <p class="total text">Total</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <script type="text/javascript" src="../assets/js/index.js"></script>
+</body>
+</html>
